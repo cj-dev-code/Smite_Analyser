@@ -38,6 +38,7 @@ class Entity:
         #   Otherwise, dont give gold/xp
         pass
     
+    # This is for gameticks. each tick, properties might change in entities like health etc. This function will handle those property changes.
     def update_per_tick(self):
         pass
     
