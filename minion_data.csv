@@ -1,0 +1,13 @@
+Minion Type	Damage	Health	Phys Protection	Mag Protection	Damage vs Towers	EXP Reward	Gold Reward
+Melee	12	420	1.5	0	5	50	17.5
+Ranged	25	305	0	1.5	11	30	12.5
+Brute	50	805	15	0	22	50	17.5
+Fire Melee	24	565	30	30	11	60	17
+Fire Ranged	50	465	30	30	31	40	12
+Fire Brute	100	900	45	30	45	60	17
+Oni Melee	21	546	51.5	60	8.75	50	17.5
+Oni Ranged	43.75	396.5	50	61.5	19.25	30	12.5
+Oni Brute	87.5	1046.5	65	60	38.5	50	17.5
+Oni Fire Melee	42	734.5	80	90	19.25	60	17
+Oni Fire Ranged	87.5	604.5	80	90	54.25	40	12
+Oni Fire Brute	175	1170	95	90	78.75	60	17
