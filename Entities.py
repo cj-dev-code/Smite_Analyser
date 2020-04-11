@@ -80,6 +80,15 @@ class God(Entity):
         g = self._god_data
         Entity.__init__(self, health, g['])
         
+    def cast_1(self, teammates, enemies):
+        pass
+    def cast_2(self, teammates, enemies):
+        pass    
+    def cast_3(self, teammates, enemies):
+        pass
+    def cast_4(self, teammates, enemies):
+        pass
+    
     def level_up(self):
         self._health += self._health_per_level
         self._mana += self._mana_per_level
@@ -106,8 +115,6 @@ class God(Entity):
         self._perc_phys_pen += item._perc_phys_pen
         self._perc_mag_pen += item._perc_mag_pen
         self._ccr += item._l
-        
-        
         self._item += 1
         
 class Ability:
