@@ -14,6 +14,10 @@ class Entity:
                  phys_damage_percent, mag_damage_percent,
                  flat_phys_pen, flat_mag_pen, percent_phys_pen, percent_mag_pen):
         self._TYPE = "ENTITY"
+        self._base_damage = base_damage
+        self._health = health
+        self._mag_prot = mag_prot
+        
     
     # Should apply damage to other by taking away their health appropriately
     # returns damage dealt
@@ -75,13 +79,15 @@ class God(Entity):
         self._name = name
         self._items = 0
         self._ccr = 0
-        
+        self._lifesteal = 0
         
         self._god_data = god_data
         g = self._god_data
-        Entity.__init__(self, health, g['])
+        Entity.__init__(self, health, g[''])
         
     def cast_1(self, teammates, enemies):
+        # Cast Parts of abilities, summing total applied damage..
+        # Apply total damage at the end using the Entity.damageto function.
         pass
     def cast_2(self, teammates, enemies):
         pass    
@@ -128,3 +134,4 @@ class Ability:
     # enemies: list, with primary attacking enemy first.
     def cast(self, teammates, enemies):
         pass
+    
