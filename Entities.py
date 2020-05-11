@@ -123,15 +123,57 @@ class God(Entity):
         self._perc_mag_pen += item._perc_mag_pen
         self._ccr += item._l
         self._item += 1
+      
         
+'''
+Wrapper class for Smite Abilities
+'''
 class Ability:
-    def __init__(self, perc_phys_pow, perc_mag_pow, flat_phys_dmg, flat_mag_dmg, 
+    def __init__(self, name, perc_phys_pow, perc_mag_pow, flat_phys_dmg, flat_mag_dmg, 
                  mana_cost, cooldown, cc_effect_enemy, cc_effect_caster, 
-                 slow_on_enemy, slow_on_caster, casting_range):
-        pass
+                 casting_range):
+        self._name = name
+        self._perc_phys_pow = perc_phys_pow
+        self._perc_mag_pow = perc_mag_pow
+        self._flat_phys_dmg = flat_phys_dmg
+        self._flat_mag_dmg = flat_mag_dmg
+        self._mana_cost = mana_cost
+        self._cooldown = cooldown
+        self._cc_effective_enemy = cc_effect_enemy
+        self._cc_effect_caster = cc_effect_caster
+        self._csating_range = casting_range
+    
+    def __repr__(self):
+        return 
     
     # Teammates: List, with caster first
     # enemies: list, with primary attacking enemy first.
     def cast(self, teammates, enemies):
         pass
     
+    def deal_damage(self, others):
+        pass
+    
+    def deal_effects(self, others):
+        pass
+    
+    def load_from_file(file_name):
+        pass
+    
+    def write_to_file(file_name):
+        output_file = open(file_name, 'a')
+        
+class Knockup(Ability):
+    pass
+
+class Slow(Ability):
+    pass
+
+class Stun(Ability):
+    pass
+class Silence(Ability):
+    pass
+class Mezz(Ability):
+    pass
+class Hybrid(Ability):
+    pass
